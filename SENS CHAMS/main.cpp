@@ -25,6 +25,24 @@ __declspec(align(16)) struct Colorium
 };
 
 
+constexpr const int GetWeaponPaint(const short& itemDefinition) //THIS TOOK ME WAY TOO LONG!
+{
+	switch (itemDefinition)
+	{
+	case 1: return 12; //Deagle
+	case 4: return 568; // Glock
+	case 3: return 430; //Fiveseven
+	case 7: return 44; //AK47
+	case 8: return 33; //AUG
+	case 9: return 344; //AWP
+	case 10: return 194; //Famas
+	case 16: return 309; //M4A4
+	case 60: return 445; //M4A1-S
+	default: return 0;
+	}
+}
+
+
 int main()
 {
 	bool takesconfig = false; //This is my configuration! │ Aimbot = M4 │ Flat Chams Disabled │ Team Chams = Green │ Enemy Chams = Pink & Red │ Bhop Enagled
